@@ -2,16 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
     .nav {
-        display: flex;
+        display: none;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        @media only screen and (min-width: 425px) {
+            display: flex;
+        }
         &__item {
             margin-left: 1.5rem;
             margin-right: 1.5rem;
         }
-        
+    }
+    .nav-hamburger {
+
     }
   }
