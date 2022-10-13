@@ -3,9 +3,10 @@ import type { NextPage } from 'next';
 
 interface INavBarItem {
     name: string;
+    url: string,
 }
 
-const NavBarItem: FC<INavBarItem> = ({name}) => {
+const NavBarItem: FC<INavBarItem> = (props) => {
     // if(props.isIcon) {
     //     return (
     //         <a href={props.url}><i</a>
@@ -16,7 +17,12 @@ const NavBarItem: FC<INavBarItem> = ({name}) => {
     //     );
     // }
         return (
-            <li className='nav__item'>{name}</li>
+            <li className='nav__item'>
+                <a href={props.url}>
+                {props.name}
+
+                </a>
+            </li>
         );
 }
 

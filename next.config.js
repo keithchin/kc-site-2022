@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   rewrites: () => [ADMIN_REWRITE],
+  sassOptions: {
+		includePaths: [path.join(__dirname, 'styles')]
+	}
 }
 
 const ADMIN_REWRITE = {

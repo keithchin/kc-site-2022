@@ -9,5 +9,11 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+	plugins: [
+		require( 'tailwindcss' ),
+		require( 'precss' ),
+		require( 'autoprefixer' )
+	]
 }
+
+

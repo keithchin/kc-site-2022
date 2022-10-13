@@ -4,16 +4,11 @@ import type { NextPage } from 'next';
 import NavBarItem from './NavBarItem';
 import { arrayBuffer } from 'stream/consumers';
 
-const names = ['Bio', 'Work', 'Contact', 'Discography'];
-// for(let i = 0; i < 6; i++) {
-//     navBarItems.push(<NavBarItem name=""/>)
-// }
-
 const navBarItems = [
-    {name : 'Bio'},
-    {name : 'Work'},
-    {name: 'Contact'},
-    {name : 'Discography'}
+    {name : 'Bio', url : '/bio'},
+    {name : 'Work', url: '/work'},
+    {name: 'Contact', url: '/contact'},
+    {name : 'Discography', url: '/disco'}
 ];
 
 const NavBar: FC= () => {
@@ -22,7 +17,7 @@ const NavBar: FC= () => {
             <nav>
                 <ul className="nav">
                     {navBarItems.map(item => 
-                        (<NavBarItem name={item.name} />)
+                        (<NavBarItem name={item.name} url={item.url} />)
                     )}
                 </ul>
             </nav>
