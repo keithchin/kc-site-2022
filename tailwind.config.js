@@ -7,7 +7,11 @@ module.exports = {
     fontFamily: {
       sans: ['Titillium Web', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-image': "url('/bg-kc.png')"
+      }
+    },
   },
 	plugins: [
 		require( 'tailwindcss' ),

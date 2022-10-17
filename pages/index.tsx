@@ -6,11 +6,14 @@ import Header from '../components/Header'
 const Home: NextPage = () => {
   return (
     <div>
+      <div id="hero" className="max-height-100 hero-image" >
       <Header />
-      <div className="flex py-6 flex-col min-h-screen">
-        <h1 className="text-center text-xl">Keith Chin</h1>
-        <h4 className="text-center">Front End Developer</h4>
+
       </div>
+      <div id="bio" className="max-height-100  bg-white"></div>
+      <div id="work" className="max-height-100  bg-black"></div>
+      <div id="contact" className="max-height-100  bg-white"></div>
+      <div id="disco" className="max-height-100  bg-black"></div>
     </div>
   )
 }

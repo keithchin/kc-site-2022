@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+var path = require('path');
 const nextConfig = {
   reactStrictMode: true,
   rewrites: () => [ADMIN_REWRITE],

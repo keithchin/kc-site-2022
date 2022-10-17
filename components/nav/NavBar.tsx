@@ -5,10 +5,10 @@ import NavBarItem from './NavBarItem';
 import { arrayBuffer } from 'stream/consumers';
 
 const navBarItems = [
-    {name : 'Bio', url : '/bio'},
-    {name : 'Work', url: '/work'},
-    {name: 'Contact', url: '/contact'},
-    {name : 'Discography', url: '/disco'}
+    {name : 'Bio', url : '#bio'},
+    {name : 'Work', url: '#work'},
+    {name: 'Contact', url: '#contact'},
+    {name : 'Discography', url: '#disco'}
 ];
 
 const NavBar: FC= () => {
