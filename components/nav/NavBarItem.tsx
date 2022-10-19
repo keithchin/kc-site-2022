@@ -1,5 +1,6 @@
 import React , { FC }from 'react';
 import type { NextPage } from 'next';
+import Link from 'next/link';
 
 interface INavBarItem {
     name: string;
@@ -18,10 +19,10 @@ const NavBarItem: FC<INavBarItem> = (props) => {
     // }
         return (
             <li className='nav__item'>
-                <a href={props.url}>
+                <Link href={props.url}>
                 {props.name}
 
-                </a>
+                </Link>
             </li>
         );
 }
