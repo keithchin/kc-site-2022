@@ -4,7 +4,7 @@
 
 @layer components {
     #hero {
-        background-image: url('../public/bg-kc.png');
+        background-image: url('../public/bg-hero.png');
         height: 800px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -25,77 +25,116 @@
             margin-top: 2rem;
             margin-left: 3rem;
         }
+
         &__kc {
             font-size: 72px;
             letter-spacing: 13.5px;
             color: #fff;
             font-weight: 800;
         }
+
         &__programmer {
             color: #fff;
             font-size: 24px;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
             // border-right: .15em solid orange; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
             // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .15em; /* Adjust as needed */
-            animation: 
-              typing 1.5s steps(30, end),
-              blink-caret .5s step-end infinite;
+            letter-spacing: .15em;
+            /* Adjust as needed */
+            animation:
+                typing 1.5s steps(30, end),
+                blink-caret .5s step-end infinite;
         }
+
         &__producer {
             color: #fff;
             font-size: 48px;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
             // border-right: .15em solid orange; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            letter-spacing: .15em; /* Adjust as needed */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            letter-spacing: .15em;
+            /* Adjust as needed */
             -webkit-animation-delay: 2s;
             animation-delay: 2s;
             -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-            animation: 
+            animation:
                 typing 3.5s steps(30, end),
                 blink-caret .5s step-end infinite;
         }
     }
-      
-      /* The typing effect */
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
-      
-      /* The typewriter cursor effect */
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: orange }
-      }
+
+    /* The typing effect */
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: orange
+        }
+    }
+
     .hero {
         &__container {
             margin: auto;
+
             @media only screen and (max-width: 1600px) {
                 max-width: 1200px;
             }
+
             @media only screen and (max-width: 1280px) {
                 max-width: 1100px;
             }
+
             @media only screen and (max-width: 1024px) {
                 max-width: 900px;
             }
+
             @media only screen and (max-width: 768px) {
                 max-width: 670px;
             }
+
             @media only screen and (max-width: 578px) {
                 max-width: 425px;
             }
+
             @media only screen and (max-width: 425px) {
                 max-width: 100%;
             }
         }
     }
+
+    #bio {
+        background-image: url('../public/bg-kc.png');
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
     .bio {
         background-color: #090B0A;
+
         &__wrapper {
             display: flex;
             flex-direction: column;
@@ -103,20 +142,22 @@
             margin-left: 3rem;
             padding-top: 2rem;
 
-            > h2 {
+            >h2 {
                 font-size: 40px;
                 font-weight: 800;
             }
         }
     }
+
     .nav {
         display: none;
 
-        
+
         @media only screen and (min-width: 425px) {
             display: flex;
             justify-content: flex-end;
         }
+
         &__item {
             font-size: 20px;
             font-weight: 800;
@@ -125,7 +166,6 @@
             color: #FFF;
         }
     }
-    .nav-hamburger {
 
-    }
-  }
+    .nav-hamburger {}
+}

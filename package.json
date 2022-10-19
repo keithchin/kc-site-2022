@@ -11,10 +11,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.8.10",
     "animejs": "^3.2.1",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "three": "^0.145.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",
