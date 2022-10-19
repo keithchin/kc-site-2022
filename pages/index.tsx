@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useEffect } from 'react';
 import type { NextPage } from 'next'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 // const handleScroll = () => {}
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
         <Header />
         <div className='tw'>
           <div className='tw__wrapper'>
-            <h1 className="tw__kc">Keith Chin</h1>
+            <Image src="/logo_keith.png" alt="Keith Chin Logo" width={500} height={100} />
             <a className='tw__programmer' href="#work">Front End Developer. Music Maker. Audiophile.</a>
           </div>
         </div>
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
       <div id="work" className="max-height-100  bg-black"></div>
       <div id="contact" className="max-height-100  bg-white"></div>
       <div id="disco" className="max-height-100  bg-black"></div>
+      <Footer />
     </div>
   )
 }
