@@ -8,7 +8,7 @@ const year = d.getFullYear();
 
 const Footer: FC = () => {
     return (
-        <footer className='bg-black'>
+        <footer className='bg-footer'>
             <div className="footer">Made with Next.js by Keith Chin. {year} </div>
         </footer>
     )

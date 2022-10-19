@@ -172,6 +172,14 @@
 
     .nav-hamburger {}
 
+    .bg-footer {
+        background-image: url('../public/bg-hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
     .footer {
         font-size: 24px;
         color: #FFF;
