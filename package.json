@@ -13,7 +13,9 @@
   "dependencies": {
     "@react-three/fiber": "^8.8.10",
     "animejs": "^3.2.1",
+    "framer-motion": "^7.6.1",
     "next": "12.1.6",
+    "next-seo": "^5.8.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "three": "^0.145.0"
