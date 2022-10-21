@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+
+    #header {
+        background-image: url('../public/bg-hero.png');
+    }
+
     #hero {
         background-image: url('../public/bg-hero.png');
         height: 800px;
@@ -158,7 +163,7 @@
         }
     }
 
-    .nav {
+    .navbar {
         display: none;
 
 
@@ -166,22 +171,67 @@
             display: flex;
             justify-content: flex-end;
             position: absolute;
-            flex-direction: column;
-            bottom: 90px;
-            left: 26px;
         }
 
         &__item {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 800;
             margin-left: 1.5rem;
             margin-right: 1.5rem;
             margin-bottom: 1rem;
+            margin-top: 1rem;
             color: #FFF;
         }
     }
 
-    .nav-hamburger {}
+    .nav-mobile {
+        display: block;
+        padding: 25px;
+        position: absolute;
+        top: 100px;
+        width: 230px;
+        z-index: 999;
+        // @media only screen and (min-width: 425px) {
+        //     display: none;
+        // }
+
+        &__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 300px;
+            background: #fff;
+            z-index: 2
+        }
+
+        &__item {
+            font-size: 16px;
+            font-weight: 800;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        &__toggle {
+            outline: none;
+            border: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            left: 28px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: transparent;
+            z-index: 3;
+        }
+    }
+
 
     .bg-footer {
         background-image: url('../public/bg-hero.png');
