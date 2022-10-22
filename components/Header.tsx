@@ -11,7 +11,7 @@ import NavBarMobile from '../components/nav/NavBarMobile'
 
 const sidebar = {
     open: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+        clipPath: `circle(${height * 2 + 200}px at 60px 60px)`,
         transition: {
             type: "spring",
             stiffness: 20,
@@ -19,7 +19,7 @@ const sidebar = {
         }
     }),
     closed: {
-        clipPath: "circle(30px at 40px 40px)",
+        clipPath: "circle(30px at 60px 60px)",
         transition: {
             delay: 0.5,
             type: "spring",
@@ -35,12 +35,13 @@ const Header: FC = () => {
     return (
         <header id="header">
             <div className="flex justify-between">
-                {/* <NavBar /> */}
+                <NavBar />
                 <motion.nav
                     initial={false}
                     animate={isOpen ? "open" : "closed"}
                     custom={height}
                     ref={containerRef}
+                    className="nav-mobile"
                 >
                     <motion.div className="nav-mobile__bg" variants={sidebar} />
                     <NavBarMobile />

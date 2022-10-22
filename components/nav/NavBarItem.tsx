@@ -24,7 +24,7 @@ const NavBarItem: FC<INavBarItem> = (props) => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 5 }}
         >
-            <li className='nav__item'>
+            <li className='navbar__item'>
                 <Link href={props.url}>
                     {props.name}
 

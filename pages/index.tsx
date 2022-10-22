@@ -19,7 +19,15 @@ const Home: NextPage = () => {
         <section>
           <div className='tw'>
             <div className='tw__wrapper'>
-              <Image src="/logo_keith.png" alt="Keith Chin Logo" width={500} height={100} />
+              {/* Desktop Logo */}
+              <div className="tw__desktop-logo">
+                <Image src="/logo_keith.png" alt="Keith Chin Logo" layout="responsive" width={100} height={20} />
+              </div>
+
+              {/* Mobile Logo */}
+              <div className="tw__mobile-logo" >
+                <Image src="/logo_keith.png" alt="Keith Chin Logo" layout="responsive" width={500} height={80} />
+              </div>
               <a className='tw__programmer' href="#work">Front End Developer. Music Maker. Audiophile.</a>
             </div>
           </div>
