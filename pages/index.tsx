@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useEffect } from 'react';
 import type { NextPage } from 'next'
 import Layout from '../components/Layout'
+import { motion, AnimatePresence  } from 'framer-motion'
 
 
 // const handleScroll = () => {}
@@ -20,9 +21,17 @@ const Home: NextPage = () => {
           <div className='tw'>
             <div className='tw__wrapper'>
               {/* Desktop Logo */}
-              <div className="tw__desktop-logo">
-                <Image src="/logo_keith.png" alt="Keith Chin Logo" layout="responsive" width={150} height={20} />
-              </div>
+              <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{delay: 1}}
+                className="tw__desktop-logo"
+              >
+                    <Image src="/logo_keith.png" alt="Keith Chin Logo" layout="responsive" width={150} height={20} />
+              </motion.div>
+              </AnimatePresence>
 
               {/* Mobile Logo */}
               <div className="tw__mobile-logo" >

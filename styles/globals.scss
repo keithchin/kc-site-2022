@@ -64,6 +64,7 @@
             color: #fff;
             font-size: 16px;
             overflow: hidden;
+            padding-top: 1rem;
 
 
             @media only screen and (min-width: 767px) {
@@ -195,7 +196,6 @@
         @media only screen and (min-width: 425px) {
             display: flex;
             justify-content: flex-end;
-            position: absolute;
         }
 
         &__item {

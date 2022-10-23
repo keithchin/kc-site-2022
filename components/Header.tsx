@@ -35,6 +35,7 @@ const Header: FC = () => {
     return (
         <header id="header">
             <div className="flex justify-between">
+                <a href="/" className="font-bold text-white mt-4 ml-6 mr-6">Home</a>
                 <NavBar />
                 <motion.nav
                     initial={false}
