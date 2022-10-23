@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useRef } from 'react';
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "../use-dimensions";
 
@@ -35,7 +36,9 @@ const Header: FC = () => {
     return (
         <header id="header">
             <div className="flex justify-between">
-                <a href="/" className="font-bold text-white mt-4 ml-6 mr-6">Home</a>
+                <a href="/" className="font-bold text-white mt-4 ml-6 mr-6">
+                    <img src="/logo_keith.png" alt="Keith Chin Logo" className="icon__header"/>
+                </a>
                 <NavBar />
                 <motion.nav
                     initial={false}

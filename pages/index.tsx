@@ -66,46 +66,31 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
-          <section id="hero" className="max-height-100 hero-image">
-            <div className='bio'>
-              <div className='bio__wrapper text-white'>
-                  <Box
-                  >
-                      <h2 className="font-bold text-3xl">Hello there, good to see you around here..</h2>
-                      <p className="text-xl mt-5">I'm Keith Chin, but you can call me KC.</p>
-                      <p className="text-xl mt-5">Who am I? I'm a problem solving creature that is always scratching that logical or creative itch at the back of my mind.</p>
-                      <p className="text-xl mt-5">That aside, my current profession is a Front End Developer, where I bring to life design wireframes with a soul flowing in from the Back End.   </p>
-                      <p className="text-xl mt-5">If you're looking for my <span className="font-semibold">resume</span> or <span className="font-semibold">portfolio</span>, feel free to jump to the <a href="#work" className="font-bold hover:text-slate-300">Work</a> section.</p>
-                      <p className="text-xl mt-5">If you're here, however, for my music, do check out the <a href="#music" className="font-bold hover:text-slate-300">Music</a> section</p>
-                      <p className="text-xl mt-5">Feel free to wonder around and you can also contact me here. Just make sure you're not a scammer. </p>
-                      <p className="font-bold text-3xl mt-10">Enjoy your stay!</p>
-                  </Box>
-              </div>
-            </div>
-          </section>
-          <section id="hero" className="max-height-100 hero-image">
-            <div className='tw'>
-              <div className='tw__wrapper'>
-                {/* Desktop Logo */}
-                <AnimatePresence>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0.5, rotateY: 180 }}
-                    transition={{delay: 1}}
-                    className="tw__desktop-logo"
-                  >
-                    <Image src="/logo_keith.png" alt="Keith Chin Logo" layout="responsive" width={150} height={20} />
-                  </motion.div>
-                </AnimatePresence>
 
-                {/* Mobile Logo */}
-                <div className="tw__mobile-logo" >
-                  <Image src="/logo_keith.png" alt="Keith Chin Logo" layout="responsive" width={500} height={80} />
+          <section id="about" className="max-height-100 hero-image">
+            <div className='bio'>
+                <div className='bio__wrapper  text-white'>
+                  <Box>
+                      <div className="flex justify-center">
+                        <img className="icon floating mt-10" src="/aws-icon.webp"/>
+                        <img className="icon floating__5s" src="/js-icon.png"/>
+                        <img className="icon floating mt-6" src="/laravel-icon.png" />
+                        <img className="icon floating__7s mt-14" src="/react-icon.png"/>
+                        <img className="icon floating mt-8" src="/vue-icon.png"/>
+                      </div>
+                    </Box>
+                    <Box
+                    >
+                      <div className="text-center mt-12">
+                        <h2 className="font-bold text-2xl">As a Front End Developer..</h2>
+                        <p className="text-xl mt-5">I spend my day working on creating highly interactive pages for professional and personal use.</p>
+                        <p className="text-xl mt-5">My primary tech stack includes Vue, React, Laravel and Node.js.</p>
+                        <p className="text-xl mt-5">Besides Front End development, I've fiddled a bit with DevOps and have worked with AWS, Nginx and Linux.</p>
+                        <p className="text-xl mt-5">I'm also keen on exploring Back End development using Go, which is a topic of personal study on my own.</p>
+                        </div>
+                    </Box>
                 </div>
-                <a className='tw__programmer' href="#work">Front End Developer. Music Maker. Audiophile.</a>
               </div>
-            </div>
           </section>
         <div id="work" className="max-height-100  bg-black"></div>
         <div id="contact" className="max-height-100  bg-white"></div>

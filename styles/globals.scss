@@ -7,15 +7,58 @@
 
 
     #header, #hero, #bio, #portfolio, .bg-footer {
-        background-image: url('../public/bg-hero.png');
+        // background-image: url('../public/bg-hero.png');
+        background-color: #090B0A;
     }
 
     #hero {
-        height: 900px;
+        height: 800px;
         background-repeat: no-repeat;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+    }
+
+    .icon {
+        height: 100%;
+        width: 100px;
+        &__header {
+            height: 16px;
+            width: 100%;
+        }
+    }
+
+    .floating { 
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 60px;
+        margin-top: 5px;
+
+        &__5s {
+            animation-name: floating;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 50px;
+            margin-top: 5px;
+        }
+        &__7s {
+            animation-name: floating;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            margin-left: 70px;
+            margin-top: 5px;
+        }
+    }
+    
+     
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
     }
 
     // Typewriter effect
@@ -172,9 +215,9 @@
         &__wrapper {
             display: flex;
             color: #FFF;
-            justify-content: flext-start;
+            justify-content: center;
+            flex-direction: column;
             padding-top: 5rem;
-            margin-left: 2rem;
             padding-bottom: 5rem;
             text-align: flex-start;
             >h2 {
