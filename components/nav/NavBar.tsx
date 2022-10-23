@@ -6,7 +6,7 @@ import { arrayBuffer } from 'stream/consumers';
 
 const navBarItems = [
     { name: 'Bio', url: '/bio' },
-    { name: 'Work', url: '#work' },
+    { name: 'Portfolio', url: '/portfolio' },
     { name: 'Contact', url: '#contact' },
     { name: 'Discography', url: '#disco' }
 ];

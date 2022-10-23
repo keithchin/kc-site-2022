@@ -15,7 +15,7 @@ const variants = {
 }
 
 const Layout = ({ children, title, description }: Props): JSX.Element => (
-    <div id="hero" className="max-height-100 hero-image">
+    <div>
         <NextSeo title={title} description={description} openGraph={{ title, description }} />
         <motion.main
             initial="hidden"

@@ -4,12 +4,13 @@
 
 @layer components {
 
-    #header {
+
+
+    #header, #hero, #bio, #portfolio, .bg-footer {
         background-image: url('../public/bg-hero.png');
     }
 
     #hero {
-        background-image: url('../public/bg-hero.png');
         height: 900px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -158,7 +159,6 @@
     }
 
     #bio {
-        background-image: url('../public/bg-hero.png');
         height: 900px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -171,11 +171,12 @@
 
         &__wrapper {
             display: flex;
-            flex-direction: column;
             color: #FFF;
-            margin-left: 3rem;
+            justify-content: flext-start;
             padding-top: 5rem;
-
+            margin-left: 2rem;
+            padding-bottom: 5rem;
+            text-align: flex-start;
             >h2 {
                 font-size: 40px;
                 font-weight: 800;
@@ -259,7 +260,6 @@
 
 
     .bg-footer {
-        background-image: url('../public/bg-hero.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-repeat: no-repeat;
